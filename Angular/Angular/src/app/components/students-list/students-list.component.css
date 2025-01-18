@@ -1,0 +1,16 @@
+.styled-table {
+    border-collapse: collapse;
+    width: 50%;
+    font-size: 1em;
+    font-family: Arial, sans-serif;
+    text-align: left;
+  }
+  thead, td {
+    border: 1px solid black; /* Adds a border around each cell */
+    padding: 10px;           /* Adds padding inside cells */
+    text-align: left;        /* Aligns text to the left */
+  }
+  thead {
+    background-color: lightblue; /* Light gray background for header */
+  }
+
