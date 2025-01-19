@@ -1,0 +1,19 @@
+<h2>Update Student</h2>
+<form (ngSubmit)="onUpdate()">
+    <div>
+        <label>FirstName</label>
+        <input type="text" id="firstName"
+        [(ngModel)]="student.firstName" name="firstName">
+    </div>
+    <div>
+        <label>LastName</label>
+        <input type="text" id="lastName"
+        [(ngModel)]="student.lastName" name="lastName">
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="text" id="email"
+        [(ngModel)]="student.email" name="firstName">
+    </div>
+    <button type="submit">Submit</button>
+</form>

@@ -1,11 +1,11 @@
-<h2>Student Management System</h2>
 <table class="styled-table">
     <thead>
     <tr>
-        <td>Id</td>
-        <td>FirstName</td>
-        <td>LastName</td>
-        <td>Email</td>
+        <th>Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>Action</th>
     </tr>
 </thead>
     @for(student of students; track student.id) {     
@@ -15,6 +15,10 @@
             <td>{{student.firstName}}</td>
             <td>{{student.lastName}}</td>
             <td>{{student.email}}</td>
+            <td>
+                <button (click)="updateStudent(student.id)">Update</button>
+                <button (click)="deleteStudent(student.id)">Delete</button>
+            </td>
         </tr>
     </tbody>
 }
